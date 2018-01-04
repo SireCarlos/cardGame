@@ -8,69 +8,26 @@
 
 import Foundation
 
+enum Colour{
+    case red
+    case blue
+    case green
+}
+
 class Card{
     
     let name : String;
-    let name : String;
-    let name : String;
-    let name : String;
-    let name : String;
+    let number : Int;
+    let colour : Colour;
+    let value : Int;
+    let image : String;
 
-
-    init(String name, int number, int colour, int value, String image) {
-        this.name = name;
-        this.number = number;
-        this.colour = colour;
-        this.value = value;
-    }
-
-public card(){
-}
-
-public String getName() {
-    return name;
-}
-public void setName(String name) {
-    this.name = name;
-}
-public int getNumber() {
-    return number;
-}
-public void setNumber(int number) {
-    this.number = number;
-}
-public int getColour() {
-    return colour;
-}
-public void setColour(int colour) {
-    this.colour = colour;
-}
-public int getValue() {
-    return value;
-}
-public void setValue(int value) {
-    this.value = value;
-}
-public ImageIcon getImage() {
-    return image;
-}
-
-public void setImage(ImageIcon image) {
-    this.image = image;
-}
-
-public String printColour(){
-    switch(this.colour){
-    case 1:
-        return "Gruen";
-    case 2:
-        return "Blau";
-    case 3:
-        return "Rot";
-    default:
-        return "Fehler";
+    init(name: String, number: Int, colour: Colour, value: Int, image: String) {
+        self.name = name;
+        self.number = number;
+        self.colour = colour;
+        self.value = value;
+        self.image = image;
     }
 }
-public String printCard(){
-    return (getName() + " (" + getValue() + " | " + printColour() + ")");
-}
+
