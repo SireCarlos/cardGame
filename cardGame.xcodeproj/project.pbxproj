@@ -68,6 +68,8 @@
 		070B0B331FFE2C1100D6D388 /* cardGame */ = {
 			isa = PBXGroup;
 			children = (
+				8475417A20076DF500322143 /* MyCollectionViewCell.swift */,
+				84754176200767F400322143 /* TableBackground.png */,
 				070B0B341FFE2C1100D6D388 /* AppDelegate.swift */,
 				070B0B361FFE2C1100D6D388 /* ViewController.swift */,
 				070B0B381FFE2C1100D6D388 /* Main.storyboard */,
@@ -146,6 +148,7 @@
 			files = (
 				070B0B3F1FFE2C1100D6D388 /* LaunchScreen.storyboard in Resources */,
 				070B0B3C1FFE2C1100D6D388 /* Assets.xcassets in Resources */,
+				84754177200767F400322143 /* TableBackground.png in Resources */,
 				070B0B3A1FFE2C1100D6D388 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

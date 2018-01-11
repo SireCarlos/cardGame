@@ -17,12 +17,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TableBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="g5t-xU-JUL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UAd-eb-vbk">
+                                <rect key="frame" x="0.0" y="555" width="375" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Eu5-zP-LPD">
+                                    <size key="itemSize" width="63" height="111"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collection_cell" id="5p9-Bu-qFn" customClass="MyCollectionViewCell" customModule="cardGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="63" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pd9-nt-LU7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="111"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Pd9-nt-LU7" firstAttribute="top" secondItem="5p9-Bu-qFn" secondAttribute="top" id="0bz-0k-4CE"/>
+                                            <constraint firstItem="Pd9-nt-LU7" firstAttribute="top" secondItem="5p9-Bu-qFn" secondAttribute="top" id="1eA-ua-1Ui"/>
+                                            <constraint firstAttribute="bottom" secondItem="Pd9-nt-LU7" secondAttribute="bottom" id="BvD-Md-MH7"/>
+                                            <constraint firstItem="Pd9-nt-LU7" firstAttribute="leading" secondItem="5p9-Bu-qFn" secondAttribute="leading" id="Ktt-L5-dSE"/>
+                                            <constraint firstItem="Pd9-nt-LU7" firstAttribute="leading" secondItem="5p9-Bu-qFn" secondAttribute="leading" id="OuC-ef-GtD"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pd9-nt-LU7" secondAttribute="trailing" id="ndp-6D-jI2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pd9-nt-LU7" secondAttribute="trailing" id="qcp-Rw-B8o"/>
+                                            <constraint firstAttribute="bottom" secondItem="Pd9-nt-LU7" secondAttribute="bottom" id="yfd-81-EyI"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="MyCardView" destination="Pd9-nt-LU7" id="9ia-OI-0ko"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WuY-aw-sN6">
+                                <rect key="frame" x="60" y="82" width="260" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="myCollectionView" destination="UAd-eb-vbk" id="g0b-DC-hk1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TableBackground.png" width="900" height="1600"/>
+    </resources>
 </document>
