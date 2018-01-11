@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TableBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="g5t-xU-JUL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TableBackground" translatesAutoresizingMaskIntoConstraints="NO" id="g5t-xU-JUL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -79,6 +79,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TableBackground.png" width="900" height="1600"/>
+        <image name="TableBackground" width="900" height="1600"/>
     </resources>
 </document>
