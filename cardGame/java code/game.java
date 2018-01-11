@@ -6,10 +6,10 @@ import javax.swing.*;
 import java.util.Random;
 import java.util.Scanner;
 public class game  extends JFrame{
-	private player[] players;
-	private deck deck;
-	private table table;
-	private int turncounter;
+    private player[] players;
+    private deck deck;
+    private table table;
+    private int turncounter;
 	private int playernumber;
 	private int current;
 	private boolean gamerunning;
