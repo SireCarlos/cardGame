@@ -14,7 +14,8 @@ class Game{
     let table = Table()
     var turnCounter : Int = 0
     var gameOver = false
-    var currentPlayer : Player
+    var currentPlayer = Players.none
+    var winner = Players.none
     
     
     init(){
@@ -26,7 +27,12 @@ class Game{
             }
         }
         let start = Int(arc4random_uniform(UInt32(players.count)))
-        currentPlayer = players[start]
+        if start == 0{
+            currentPlayer = .player1
+        }
+        else{
+            currentPlayer = .computer
+        }
         //TODO GUI: player[start] starts
     }
     
@@ -42,8 +48,18 @@ class Game{
     }
     
     func playCard(index: Int){
-        currentPlayer.cards.remove(at: index)
-        table.cards.append(card)
+        let playedCard = currentPlayer.cards.remove(at: index)
+        table.cards.append(playedCard)
+        checkWinner()
+        nextPlayer()
+    }
+    
+    func checkWinner(){
+        for player in players{
+            if player.cards.count == 0{
+                winner = player
+            }
+        }
     }
     
     func turn(){

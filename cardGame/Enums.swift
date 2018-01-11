@@ -15,6 +15,7 @@ enum Colour{
 }
 
 enum Players{
+    case none
     case player1
     case computer
 }

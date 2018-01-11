@@ -14,6 +14,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     var images = ["b0", "r1", "g2", "r3", "r4"]
     
+    let game = Game()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.myCollectionView.delegate = self
@@ -32,8 +34,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection_cell", for: indexPath) as! MyCollectionViewCell
         
         //set images
-        cell.MyCardView.image = UIImage(named: images[indexPath.row])
+        cell.MyCardView.image = UIImage(named: game.players[0].cards[indexPath.row].name)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        if game.currentPlayer === game.players[0]{
+            
+        }
+    }
+    
 }
 
