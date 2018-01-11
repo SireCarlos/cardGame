@@ -14,9 +14,9 @@ enum Colour{
     case green
 }
 
-enum Players{
-    case none
-    case player1
-    case computer
+enum Players: Int{
+    case player1 = 0
+    case computer = 1
+    case none = 2
 }
 

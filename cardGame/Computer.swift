@@ -10,8 +10,8 @@ import Foundation
 
 class Computer: Player{
     
-    func selectCard()->Card{
-        return cards.removeFirst()
+    func selectCard()->Int{
+        return 0
     }
 }
 
