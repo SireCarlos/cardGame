@@ -13,7 +13,6 @@
 		070B0B3C1FFE2C1100D6D388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070B0B3B1FFE2C1100D6D388 /* Assets.xcassets */; };
 		070B0B3F1FFE2C1100D6D388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070B0B3D1FFE2C1100D6D388 /* LaunchScreen.storyboard */; };
 		070B0B471FFE31BE00D6D388 /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B0B461FFE31BE00D6D388 /* card.swift */; };
-		84754177200767F400322143 /* TableBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 84754176200767F400322143 /* TableBackground.png */; };
 		8475417B20076DF500322143 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475417A20076DF500322143 /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		070B0B3E1FFE2C1100D6D388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		070B0B401FFE2C1100D6D388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		070B0B461FFE31BE00D6D388 /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
-		84754176200767F400322143 /* TableBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TableBackground.png; path = ../../../Desktop/Kartenspiel/TableBackground.png; sourceTree = "<group>"; };
 		8475417A20076DF500322143 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				8475417A20076DF500322143 /* MyCollectionViewCell.swift */,
-				84754176200767F400322143 /* TableBackground.png */,
 				070B0B341FFE2C1100D6D388 /* AppDelegate.swift */,
 				070B0B361FFE2C1100D6D388 /* ViewController.swift */,
 				070B0B381FFE2C1100D6D388 /* Main.storyboard */,
@@ -134,7 +131,6 @@
 			files = (
 				070B0B3F1FFE2C1100D6D388 /* LaunchScreen.storyboard in Resources */,
 				070B0B3C1FFE2C1100D6D388 /* Assets.xcassets in Resources */,
-				84754177200767F400322143 /* TableBackground.png in Resources */,
 				070B0B3A1FFE2C1100D6D388 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
